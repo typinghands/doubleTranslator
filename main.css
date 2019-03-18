@@ -36,7 +36,7 @@ body {
 
 hr {
   margin: 1rem;
-  width: 5rem;
+  width: 10rem;
   border: 0.2rem rgba(0, 0, 0, 0.3) solid;
   box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
   border-radius: 10rem;
@@ -101,6 +101,8 @@ article {
 }
 
 .flexRowSearch {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -122,8 +124,8 @@ article {
 }
 
 .searchButton {
-  width: 5rem;
-  height: 1rem;
+  width: auto;
+  height: auto;
   border-radius: 2rem;
   font-size: 0.7rem;
   font-family: "Raleway", sans-serif;
@@ -131,7 +133,9 @@ article {
   border: 0.05rem var(--black) solid;
   background-color: var(--dark);
   color: var(--black);
-  padding: 0.05rem;
+
+  padding: 0.5rem 1rem;
+  margin-right: 2rem;
 }
 
 .bookContainer {
@@ -148,6 +152,7 @@ article {
   width: 25rem;
   height: auto;
   margin-bottom: 2rem;
+  margin-left: 5rem;
   padding: 1rem;
 }
 
@@ -203,6 +208,7 @@ a {
 #targetLanguageList {
   float: left;
   height: 1.4rem;
+  width: auto;
   font-size: 0.8rem;
   margin-top: 0.4rem;
 
@@ -211,4 +217,17 @@ a {
   font-family: "Raleway", sans-serif;
   background-color: var(--light);
   color: var(--blackish);
+}
+
+.buttonContainer {
+  float: left;
+}
+
+.iconButton {
+  height: 0.8rem;
+}
+
+#deleteResults {
+  background-color: #ff4423;
+  font-weight: bold;
 }
