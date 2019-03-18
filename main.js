@@ -35,6 +35,14 @@ function bookSearch() {
   });
 }
 
+function pressButton(event) {
+  if (event.keyCode === 13) {
+    $("#searchButton").click();
+  }
+}
+
 document
   .getElementById("searchButton")
   .addEventListener("click", bookSearch, false);
+
+window.addEventListener("keydown", pressButton);
