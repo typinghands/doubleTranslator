@@ -1,3 +1,6 @@
+let germanResult = "";
+let englishResult = "";
+
 function bookSearch() {
   const searchResult = document.getElementById("searchBar").value;
   const searchResult3 = document.getElementById("searchBar3").value;
@@ -10,6 +13,11 @@ function bookSearch() {
     success(data) {
       console.log(data);
       document.getElementById("searchBar2").value = data.text;
+      console.log(data.text);
+
+      if (data.text) {
+        germanResult = data.text;
+      }
     },
     error() {
       /*    alert(
@@ -25,6 +33,10 @@ function bookSearch() {
     success(data) {
       console.log(data);
       document.getElementById("searchBar4").value = data.text;
+
+      if (data.text) {
+        englishResult = searchResult3;
+      }
     },
     error() {
       /*  alert(
@@ -36,11 +48,9 @@ function bookSearch() {
 }
 
 function collectResults() {
-
-  let examplevar = "heha"
   document.getElementById(
     "bookContainer"
-  ).innerHTML += `<p> ${examplevar}</p>`;
+  ).innerHTML += `<p> ${germanResult}</p> <p> ${englishResult}</p>`;
 }
 
 function pressButton(event) {
