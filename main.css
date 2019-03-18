@@ -180,3 +180,28 @@ a {
   margin-top: 2rem;
   margin-right: 4rem;
 }
+
+#headerPart1 {
+  float: left;
+  margin-left: 10rem;
+  margin-right: 0.5rem;
+}
+#headerPart2 {
+  float: left;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+#firstLanguageList,
+#targetLanguageList {
+  float: left;
+  height: 1.4rem;
+  font-size: 0.8rem;
+  margin-top: 0.4rem;
+
+  border-radius: 2rem;
+  padding: 0.2rem;
+  font-family: "Raleway", sans-serif;
+  background-color: var(--light);
+  color: var(--blackish);
+}
