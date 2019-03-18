@@ -174,6 +174,15 @@ function copyAllResults() {
   copyToClipboard(document.getElementById("bookContainer"));
 }
 
+function fnDoublecheckResults() {
+  const storedClip = document.getElementById("bookContainer").innerHTML;
+  const googleCheck = storedClip.replace(/\s/g, "%20");
+  window.open(
+    `https://translate.google.com/#view=home&op=translate&sl=${targetLanguage}&tl=${firstLanguage}&text=${googleCheck}`,
+    "_blank"
+  );
+}
+
 document
   .getElementById("searchButton")
   .addEventListener("click", bookSearch, false);
@@ -189,6 +198,10 @@ document
 document
   .getElementById("copyResults")
   .addEventListener("click", copyAllResults, false);
+
+document
+  .getElementById("doublecheckResults")
+  .addEventListener("click", fnDoublecheckResults, false);
 
 window.addEventListener("keydown", pressButton);
 window.addEventListener("keydown", toggleTabs);
