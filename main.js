@@ -1,7 +1,7 @@
 let germanResult = "";
 let englishResult = "";
-const firstLanguage = "en";
-const targetLanguage = "de";
+let firstLanguage = "en";
+let targetLanguage = "de";
 
 function bookSearch() {
   const searchResult = document.getElementById("searchBar").value;
@@ -105,6 +105,13 @@ function toggleTabs(e) {
     document.getElementById("searchBar3").focus();
   }
 }
+
+function getSelectValue() {
+  firstLanguage = document.getElementById("firstLanguageList").value;
+  targetLanguage = document.getElementById("targetLanguageList").value;
+}
+
+getSelectValue();
 
 document
   .getElementById("searchButton")
