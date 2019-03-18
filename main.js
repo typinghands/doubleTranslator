@@ -47,16 +47,35 @@ function bookSearch() {
   });
 }
 
-function collectResults() {
-  document.getElementById(
-    "bookContainer"
-  ).innerHTML += `\n ${germanResult} ${englishResult}  `;
-}
-
 function deleteWriting() {
   document.getElementById("searchBar").value = "";
   document.getElementById("searchBar3").value = "";
   document.getElementById("searchBar").focus();
+}
+
+function clearTranslation() {
+  document.getElementById("searchBar4").value = "";
+  document.getElementById("searchBar2").value = "";
+
+  document.getElementById("searchBar3").value = "";
+  document.getElementById("searchBar").focus();
+
+  if (germanResult !== "") {
+    document.getElementById("searchBar").value = "";
+  }
+
+  germanResult = "";
+  englishResult = "";
+}
+
+function collectResults() {
+  englishResult = document.getElementById("searchBar3").value;
+
+  document.getElementById(
+    "bookContainer"
+  ).innerHTML += `\n ${germanResult} ${englishResult}  `;
+
+  clearTranslation();
 }
 
 function pressButton(event) {
