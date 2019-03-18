@@ -83,6 +83,7 @@ header {
   float: left;
   border-top-right-radius: 50rem;
   border-bottom-right-radius: 50rem;
+  box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.5);
 }
 
 .floatClearer {
@@ -166,4 +167,9 @@ a {
 .result {
   background-color: var(--light);
   color: var(--black);
+}
+
+#searchBar2,
+#searchBar3 {
+  border: 0.05rem var(--dark) solid;
 }
