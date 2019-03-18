@@ -138,98 +138,19 @@ article {
 }
 
 .bookContainer {
+  background-color: var(--dark);
+  box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.5);
+  border: 0.05rem var(--black) solid;
+  border-radius: 2rem;
+
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   width: 80%;
   height: auto;
   margin-bottom: 2rem;
-  padding: 1rem;
-}
-
-.bookElement {
-  width: 90%;
-  height: auto;
-  background-color: var(--light);
-  border-radius: 1rem;
-  margin: 0.7rem 1.5rem;
-  padding: 0.1rem 0.3rem;
-  box-shadow: 0.08rem 0.08rem 0.03rem rgba(0, 0, 0, 0.8);
-
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-columns: 1fr 2fr;
-  place-items: center stretch;
-  grid-gap: 0.1rem 0.1rem;
-}
-
-.titleClass {
-  grid-column: 1 / -1;
-  color: var(--dark);
-  font-family: "Arvo", serif;
-  font-size: 0.7rem;
-  background-color: var(--white);
-  border-radius: 50rem;
-  padding: 0.3rem 0.7rem;
-  box-shadow: 0.08rem 0.08rem 0.03rem rgba(0, 0, 0, 0.8);
-}
-
-.imageClass {
-  grid-row: 2 / -1;
-  padding: 0.01rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0.3rem 0.5rem;
-}
-
-.imageLook {
-  background-color: var(--dark);
-  border-radius: 1rem;
   padding: 0.2rem;
-  height: 9rem;
-  box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.5);
-}
-
-.authorClass {
-  background-color: var(--dark);
-  color: var(--black);
-  border-radius: 50rem;
-  padding: 1rem;
-  font-family: "Raleway", sans-serif;
-  margin: 0.3rem 1rem;
-  box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.5);
-}
-
-.publisherClass {
-  background-color: var(--dark);
-  color: var(--black);
-  border-radius: 50rem;
-  padding: 1rem;
-  font-family: "Raleway", sans-serif;
-  margin: 0.3rem 1rem;
-  box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.5);
-}
-
-.publishedDateClass {
-  background-color: var(--dark);
-  color: var(--black);
-  border-radius: 50rem;
-  padding: 1rem;
-  font-family: "Raleway", sans-serif;
-  margin: 0.3rem 1rem;
-  box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.5);
-}
-
-.infoClass {
-  background-color: var(--black);
-  color: var(--black);
-  border-radius: 50rem;
-  padding: 1rem;
-  font-family: "Raleway", sans-serif;
-  margin: 0.3rem auto;
-  box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.5);
 }
 
 a {

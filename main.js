@@ -36,7 +36,11 @@ function bookSearch() {
 }
 
 function collectResults() {
-  alert("it works");
+
+  let examplevar = "heha"
+  document.getElementById(
+    "bookContainer"
+  ).innerHTML += `<p> ${examplevar}</p>`;
 }
 
 function pressButton(event) {
