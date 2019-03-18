@@ -50,7 +50,7 @@ function bookSearch() {
 function collectResults() {
   document.getElementById(
     "bookContainer"
-  ).innerHTML += `<p> ${germanResult}</p> <p> ${englishResult}</p>`;
+  ).innerHTML += `\n ${germanResult} ${englishResult}  `;
 }
 
 function deleteWriting() {
