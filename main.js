@@ -51,8 +51,11 @@ function bookSearch() {
 
 function deleteWriting() {
   document.getElementById("searchBar").value = "";
+  document.getElementById("searchBar2").value = "";
   document.getElementById("searchBar3").value = "";
-  document.getElementById("searchBar").focus();
+  document.getElementById("searchBar4").value = "";
+  germanResult = "";
+  englishResult = "";
 }
 
 function clearTranslation() {
@@ -60,7 +63,6 @@ function clearTranslation() {
   document.getElementById("searchBar2").value = "";
 
   document.getElementById("searchBar3").value = "";
-  document.getElementById("searchBar").focus();
 
   if (germanResult !== "") {
     document.getElementById("searchBar").value = "";
