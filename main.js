@@ -88,6 +88,22 @@ function pressButton(event) {
   }
 }
 
+function toggleTabs(e) {
+  if (
+    e.keyCode === 9 &&
+    document.activeElement === document.getElementById("searchBar3")
+  ) {
+    e.preventDefault();
+    document.getElementById("searchBar").focus();
+  } else if (
+    e.keyCode === 9 &&
+    document.activeElement === document.getElementById("searchBar")
+  ) {
+    e.preventDefault();
+    document.getElementById("searchBar3").focus();
+  }
+}
+
 document
   .getElementById("searchButton")
   .addEventListener("click", bookSearch, false);
@@ -97,3 +113,4 @@ document
   .addEventListener("click", collectResults, false);
 
 window.addEventListener("keydown", pressButton);
+window.addEventListener("keydown", toggleTabs);
