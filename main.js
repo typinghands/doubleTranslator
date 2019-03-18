@@ -115,6 +115,10 @@ function getSelectValue() {
 
 getSelectValue();
 
+function deleteAllResults() {
+  document.getElementById("bookContainer").innerHTML = "";
+}
+
 document
   .getElementById("searchButton")
   .addEventListener("click", bookSearch, false);
@@ -122,6 +126,10 @@ document
 document
   .getElementById("pushResults")
   .addEventListener("click", collectResults, false);
+
+document
+  .getElementById("deleteResults")
+  .addEventListener("click", deleteAllResults, false);
 
 window.addEventListener("keydown", pressButton);
 window.addEventListener("keydown", toggleTabs);
