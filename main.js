@@ -176,7 +176,8 @@ function copyAllResults() {
 
 function fnDoublecheckResults() {
   const storedClip = document.getElementById("bookContainer").innerHTML;
-  const googleCheck = storedClip.replace(/\s/g, "%20");
+  const noSpaceString = storedClip.replace(/\s\s+/g, " ");
+  const googleCheck = noSpaceString.replace(/\s/g, "%20");
   window.open(
     `https://translate.google.com/#view=home&op=translate&sl=${targetLanguage}&tl=${firstLanguage}&text=${googleCheck}`,
     "_blank"

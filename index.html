@@ -21,7 +21,7 @@
       <img src="icon.png" alt="Logo" id="logoImage" />
       <div class="floatClearer"></div>
 
-      <h5 id="headerPart1">Translate between</h5>
+      <h5 id="headerPart1">I speak</h5>
       <select id="firstLanguageList" onchange="getSelectValue();">
         <option value="en">English</option>
         <option value="de">German</option>
@@ -36,7 +36,7 @@
         <option value="tl">Tagalog</option>
         <option value="da">Danish</option>
       </select>
-      <h5 id="headerPart2">and</h5>
+      <h5 id="headerPart2">and want to practice</h5>
 
       <select id="targetLanguageList" onchange="getSelectValue();">
         <option value="de">German</option>
@@ -55,10 +55,13 @@
       <div class="floatClearer"></div>
 
       <article>
-        <button type="submit" class="searchButton" id="searchButton">
-          Translate
-        </button>
-        <button class="searchButton" id="pushResults">Save Sentences</button>
+        <div class="buttonContainer">
+          <button type="submit" class="searchButton" id="searchButton">
+            Translate
+          </button>
+          <button class="searchButton" id="pushResults">Save Sentences</button>
+        </div>
+
         <hr />
         <div class="flexRowSearch">
           <form
@@ -103,15 +106,19 @@
         </div>
         <hr />
 
-        <div class="bookContainer" id="bookContainer"></div>
+        <div class="buttonContainer">
+          <div class="bookContainer" id="bookContainer"></div>
 
-        <button class="searchButton" id="deleteResults">
-          Delete All Results
-        </button>
-        <button class="searchButton" id="copyResults">Copy to Clipboard</button>
-        <button class="searchButton" id="doublecheckResults">
-          Doublecheck on Google
-        </button>
+          <button class="searchButton" id="deleteResults">
+            Delete All Results
+          </button>
+          <button class="searchButton" id="copyResults">
+            Copy to Clipboard
+          </button>
+          <button class="searchButton" id="doublecheckResults">
+            Doublecheck on Google
+          </button>
+        </div>
 
         <div class="credits">
           <h4>Tutorial:</h4>
