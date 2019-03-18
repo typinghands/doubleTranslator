@@ -1,0 +1,246 @@
+:root {
+  --black: #1a3263;
+  --dark: #ff7657;
+  --light: #ffba5a;
+  --white: #e8e2db;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  color: var(--white);
+  font-weight: bold;
+  text-shadow: 0.04rem 0.04rem 0.05rem rgba(0, 0, 0, 0.8);
+  font-size: 2vw;
+}
+
+body {
+  background-color: #1a3263;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23162b54' fill-opacity='0.36'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.36'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E");
+  background-position: center center;
+  background-size: auto auto;
+  background-attachment: fixed;
+  /* background by SVGBackgrounds.com */
+  margin: 0px;
+  padding: 0px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+hr {
+  margin: 1rem;
+  width: 5rem;
+  border: 0.2rem rgba(0, 0, 0, 0.3) solid;
+  box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
+  border-radius: 10rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Arvo", serif;
+  text-shadow: 0.06rem 0.06rem 0.07rem rgba(0, 0, 0, 0.8);
+  margin: 0.5rem 0px;
+  color: var(--white);
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.7rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.3rem;
+}
+
+p {
+  font-size: 0.6rem;
+}
+
+header {
+  background-color: var(--dark);
+  height: 3.5;
+  margin: 2rem 0px;
+  padding: 0px 2rem;
+  width: auto;
+  float: left;
+}
+
+.divShaped {
+  margin: 2rem -1px;
+  background-color: var(--dark);
+  height: 3.5rem;
+  width: 4rem;
+  clip-path: polygon(90% 0, 40% 50%, 90% 99%, 0 100%, 0 0);
+  float: left;
+}
+
+.floatClearer {
+  clear: both;
+}
+
+article {
+  margin: 0.2rem 2rem;
+  padding: 0.2rem 0.2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+.flexRowSearch {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+
+.searchBar {
+  width: 15rem;
+  height: 2rem;
+  border-radius: 50rem;
+  font-size: 0.5rem;
+  font-family: "Raleway", sans-serif;
+  padding: 0.5rem;
+  box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.5);
+  border: 0.05rem var(--black) solid;
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.searchButton {
+  width: 5rem;
+  height: 1rem;
+  border-radius: 50rem;
+  font-size: 0.7rem;
+  font-family: "Raleway", sans-serif;
+  box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.5);
+  border: 0.05rem var(--black) solid;
+  background-color: var(--light);
+  color: var(--black);
+  padding: 0.05rem;
+}
+
+.bookContainer {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  height: auto;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+.bookElement {
+  width: 90%;
+  height: auto;
+  background-color: var(--light);
+  border-radius: 1rem;
+  margin: 0.7rem 1.5rem;
+  padding: 0.1rem 0.3rem;
+  box-shadow: 0.08rem 0.08rem 0.03rem rgba(0, 0, 0, 0.8);
+
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
+  place-items: center stretch;
+  grid-gap: 0.1rem 0.1rem;
+}
+
+.titleClass {
+  grid-column: 1 / -1;
+  color: var(--dark);
+  font-family: "Arvo", serif;
+  font-size: 0.7rem;
+  background-color: var(--white);
+  border-radius: 50rem;
+  padding: 0.3rem 0.7rem;
+  box-shadow: 0.08rem 0.08rem 0.03rem rgba(0, 0, 0, 0.8);
+}
+
+.imageClass {
+  grid-row: 2 / -1;
+  padding: 0.01rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.3rem 0.5rem;
+}
+
+.imageLook {
+  background-color: var(--dark);
+  border-radius: 1rem;
+  padding: 0.2rem;
+  height: 9rem;
+  box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.5);
+}
+
+.authorClass {
+  background-color: var(--dark);
+  color: var(--black);
+  border-radius: 50rem;
+  padding: 1rem;
+  font-family: "Raleway", sans-serif;
+  margin: 0.3rem 1rem;
+  box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.5);
+}
+
+.publisherClass {
+  background-color: var(--dark);
+  color: var(--black);
+  border-radius: 50rem;
+  padding: 1rem;
+  font-family: "Raleway", sans-serif;
+  margin: 0.3rem 1rem;
+  box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.5);
+}
+
+.publishedDateClass {
+  background-color: var(--dark);
+  color: var(--black);
+  border-radius: 50rem;
+  padding: 1rem;
+  font-family: "Raleway", sans-serif;
+  margin: 0.3rem 1rem;
+  box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.5);
+}
+
+.infoClass {
+  background-color: var(--black);
+  color: var(--black);
+  border-radius: 50rem;
+  padding: 1rem;
+  font-family: "Raleway", sans-serif;
+  margin: 0.3rem auto;
+  box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.5);
+}
+
+a {
+  color: var(--white);
+}
+
+.credits {
+  font-size: 0.5rem;
+  color: var(--light);
+  margin-top: 7rem;
+
+  position: relative;
+  bottom: 1rem;
+}

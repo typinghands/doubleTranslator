@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- This site is a pre-work project made for Chingu -->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Double Translator</title>
+    <link type="image/png" rel="icon" href="icon.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Arvo|Raleway"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  </head>
+
+  <body>
+    <main>
+      <header><h1>Double Translator</h1></header>
+      <div class="divShaped"></div>
+      <div class="floatClearer"></div>
+
+      <article>
+        <h5>Translate between languages:</h5>
+        <button type="submit" class="searchButton" id="searchButton">
+          Translate
+        </button>
+        <hr />
+        <div class="flexRowSearch">
+          <form action="#" onsubmit="return false" autocomplete="on">
+            <input
+              type="text"
+              class="searchBar"
+              id="searchBar"
+              placeholder="Add your text here"
+              autocomplete="on"
+            />
+            <input
+              type="text"
+              class="searchBar"
+              id="searchBar2"
+              placeholder="Add your text here"
+              autocomplete="on"
+            />
+            <input
+              type="text"
+              class="searchBar"
+              id="searchBar3"
+              placeholder="Add your text here"
+              autocomplete="on"
+            />
+            <input
+              type="text"
+              class="searchBar"
+              id="searchBar4"
+              placeholder="Add your text here"
+              autocomplete="on"
+            />
+          </form>
+        </div>
+        <hr />
+
+        <div class="bookContainer" id="bookContainer"></div>
+        <div class="credits">Made by Daniele</div>
+      </article>
+    </main>
+
+    <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </body>
+</html>
