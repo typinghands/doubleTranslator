@@ -173,3 +173,10 @@ a {
 #searchBar3 {
   border: 0.05rem var(--dark) solid;
 }
+
+#logoImage {
+  height: 5rem;
+  float: right;
+  margin-top: 2rem;
+  margin-right: 4rem;
+}
