@@ -58,16 +58,15 @@
         <button type="submit" class="searchButton" id="searchButton">
           Translate
         </button>
+        <button class="searchButton" id="pushResults">Save Sentences</button>
         <hr />
         <div class="flexRowSearch">
-          <form action="#" onsubmit="return false" autocomplete="on">
-            <input
-              type="text"
-              class="searchBar"
-              id="searchBar"
-              placeholder="Translate words or sentences in your target language"
-              autocomplete="on"
-            />
+          <form
+            action="#"
+            onsubmit="return false"
+            autocomplete="on"
+            id="textBarContainer"
+          >
             <input
               type="text"
               class="searchBar"
@@ -76,30 +75,41 @@
               autocomplete="on"
               autofocus
             />
+
             <input
               type="text"
-              class="searchBar result"
-              id="searchBar2"
-              placeholder="Target Language Translation"
+              class="searchBar"
+              id="searchBar"
+              placeholder="How do I say..."
               autocomplete="on"
-              readonly
             />
-
             <input
               type="text"
               class="searchBar result"
               id="searchBar4"
-              placeholder="Check what you are writing with the translation here"
+              placeholder="Translation of what you wrote"
+              autocomplete="on"
+              readonly
+            />
+            <input
+              type="text"
+              class="searchBar result"
+              id="searchBar2"
+              placeholder="..."
               autocomplete="on"
               readonly
             />
           </form>
         </div>
         <hr />
-        <button class="searchButton" id="pushResults">Save Results</button>
-        <hr />
 
         <div class="bookContainer" id="bookContainer"></div>
+
+        <button class="searchButton" id="deleteResults">
+          Delete All Results
+        </button>
+        <button class="searchButton" id="copyResults">Copy to Clipboard</button>
+
         <div class="credits">
           <h4>Tutorial:</h4>
           <p>

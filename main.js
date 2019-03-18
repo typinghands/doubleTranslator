@@ -77,7 +77,7 @@ function collectResults() {
 
   document.getElementById(
     "bookContainer"
-  ).innerHTML += `\n ${germanResult} ${englishResult}  `;
+  ).innerHTML += `\n ${englishResult} ${germanResult}  `;
 
   clearTranslation();
 }

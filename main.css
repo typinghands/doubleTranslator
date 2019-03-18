@@ -109,9 +109,9 @@ article {
 }
 
 .searchBar {
-  width: 15rem;
+  width: auto;
   height: 2rem;
-  border-radius: 50rem;
+  border-radius: 0.5rem;
   font-size: 0.5rem;
   font-family: "Raleway", sans-serif;
   padding: 0.5rem;
@@ -124,7 +124,7 @@ article {
 .searchButton {
   width: 5rem;
   height: 1rem;
-  border-radius: 50rem;
+  border-radius: 2rem;
   font-size: 0.7rem;
   font-family: "Raleway", sans-serif;
   box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.5);
@@ -138,17 +138,24 @@ article {
   background-color: var(--dark);
   box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.5);
   border: 0.05rem var(--black) solid;
-  border-radius: 2rem;
+  border-radius: 1rem;
   font-size: 0.8rem;
 
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-  /* justify-content: space-between; */
+
   width: 80%;
   height: auto;
   margin-bottom: 2rem;
   padding: 1rem;
+}
+
+#textBarContainer {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 1rem 3rem;
 }
 
 a {
