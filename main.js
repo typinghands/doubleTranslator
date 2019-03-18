@@ -53,11 +53,19 @@ function collectResults() {
   ).innerHTML += `<p> ${germanResult}</p> <p> ${englishResult}</p>`;
 }
 
+function deleteWriting() {
+  document.getElementById("searchBar").value = "";
+  document.getElementById("searchBar3").value = "";
+  document.getElementById("searchBar").focus();
+}
+
 function pressButton(event) {
   if (event.keyCode === 13 && !event.shiftKey) {
     $("#searchButton").click();
   } else if (event.keyCode === 13 && event.shiftKey) {
     $("#pushResults").click();
+  } else if (event.keyCode === 8 && event.shiftKey) {
+    deleteWriting();
   }
 }
 
