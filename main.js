@@ -35,14 +35,24 @@ function bookSearch() {
   });
 }
 
+function collectResults() {
+  alert("it works");
+}
+
 function pressButton(event) {
-  if (event.keyCode === 13) {
+  if (event.keyCode === 13 && !event.shiftKey) {
     $("#searchButton").click();
+  } else if (event.keyCode === 13 && event.shiftKey) {
+    $("#pushResults").click();
   }
 }
 
 document
   .getElementById("searchButton")
   .addEventListener("click", bookSearch, false);
+
+document
+  .getElementById("pushResults")
+  .addEventListener("click", collectResults, false);
 
 window.addEventListener("keydown", pressButton);
