@@ -5,7 +5,7 @@ function bookSearch() {
   console.log(searchResult3);
 
   $.ajax({
-    url: `https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20140720T191145Z.05605441c6ee16dc.eaaf6c6c8690cb5fb094cea2bfec4f787af6170c&lang=en-de&text=${searchResult}`,
+    url: `https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20190317T233330Z.440105d49ff7d879.1ac07e1dc4a19cd8cd8226a1526f710537e59062&lang=en-de&text=${searchResult}`,
     dataType: "json",
     success(data) {
       console.log(data);
@@ -20,7 +20,7 @@ function bookSearch() {
   });
 
   $.ajax({
-    url: `https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20140720T191145Z.05605441c6ee16dc.eaaf6c6c8690cb5fb094cea2bfec4f787af6170c&lang=de-en&text=${searchResult3}`,
+    url: `https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20190317T233330Z.440105d49ff7d879.1ac07e1dc4a19cd8cd8226a1526f710537e59062&lang=de-en&text=${searchResult3}`,
     dataType: "json",
     success(data) {
       console.log(data);
