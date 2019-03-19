@@ -134,8 +134,12 @@ article {
   background-color: var(--dark);
   color: var(--black);
 
-  padding: 0.2rem 1rem;
+  padding: 0.3rem 1rem;
   margin-right: 2rem;
+}
+
+.searchButton:hover {
+  cursor: pointer;
 }
 
 .bookContainer {
@@ -152,7 +156,7 @@ article {
   width: 29rem;
   height: auto;
   margin-bottom: 2rem;
-  margin-left: 1rem;
+  margin-left: 1.5rem;
   padding: 1rem;
 }
 
@@ -220,11 +224,12 @@ a {
   font-family: "Raleway", sans-serif;
   background-color: var(--light);
   color: var(--blackish);
+  box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.5);
 }
 
 .buttonContainer {
   float: left;
-  margin-left: 3rem;
+  margin-left: 2rem;
 }
 
 .iconButton {
@@ -234,6 +239,11 @@ a {
 }
 
 #deleteResults {
-  background-color: #ff4423;
+  background-color: var(--light);
+  color: #ff4423;
   font-weight: bold;
+}
+
+#pushDown {
+  padding: 0.3rem 0.3rem 0.2rem 0.3rem;
 }
