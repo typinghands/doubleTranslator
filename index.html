@@ -17,7 +17,31 @@
 
   <body>
     <main>
-      <header><h1>Double Translator</h1></header>
+      <header
+        onclick="location.href='https://typinghands.github.io/doubleTranslator/'"
+      >
+        <h1>Double Translator</h1>
+      </header>
+
+      <div class="floater">
+        <div class="tooltip">
+          <h2>?</h2>
+          <span class="tooltiptext">
+            <h4>Tutorial:</h4>
+            <p>
+              This is a site to practice writing in your target language and
+              producing easy to copy, easy to correct text.
+            </p>
+            <p>
+              Press "Tab" to toggle between the two text boxes. <br />
+              Press "Enter" to translate text, and "Shift + Enter" to save your
+              sentences below for easy copying. <br />
+              You can also press "Shift + Backspace" to delete what you're
+              currently typing.
+            </p>
+          </span>
+        </div>
+      </div>
       <img src="icon.png" alt="Logo" id="logoImage" />
       <div class="floatClearer"></div>
 
@@ -82,7 +106,7 @@
               type="text"
               class="searchBar result"
               id="searchBar4"
-              placeholder="Translation of what you wrote"
+              placeholder="Doublecheck what you wrote above by pressing [Enter]"
               autocomplete="off"
               readonly
             />
@@ -157,20 +181,6 @@
           </button>
         </div>
 
-        <div class="credits">
-          <h4>Tutorial:</h4>
-          <p>
-            This is a site to practice writing in your target language and
-            producing easy to copy, easy to correct text.
-          </p>
-          <p>
-            Press "Tab" to toggle between the two text boxes. <br />
-            Press "Enter" to translate text, and "Shift + Enter" to save your
-            sentences below for easy copying. <br />
-            You can also press "Shift + Backspace" to delete what you're
-            currently typing.
-          </p>
-        </div>
         <div class="credits">Made by Daniele</div>
       </article>
     </main>

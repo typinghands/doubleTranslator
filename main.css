@@ -60,6 +60,7 @@ h1 {
 
 h2 {
   font-size: 1.7rem;
+  color: var(--light);
 }
 
 h3 {
@@ -84,6 +85,10 @@ header {
   border-top-right-radius: 50rem;
   border-bottom-right-radius: 50rem;
   box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.5);
+}
+
+header:hover {
+  cursor: pointer;
 }
 
 .floatClearer {
@@ -196,7 +201,13 @@ a {
   height: 5rem;
   float: right;
   margin-top: 2rem;
-  margin-right: 4rem;
+  margin-right: 0.5rem;
+}
+
+.floater {
+  float: right;
+  margin-top: 3rem;
+  margin-right: 3rem;
 }
 
 #headerPart1 {
@@ -214,7 +225,7 @@ a {
 #targetLanguageList {
   float: left;
   height: 1.4rem;
-  width: auto;
+  width: 8rem;
   font-size: 0.7rem;
   margin-top: 0.4rem;
 
@@ -246,4 +257,33 @@ a {
 
 #pushDown {
   padding: 0.3rem 0.3rem 0.2rem 0.3rem;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  /* border-bottom: 0.1rem dotted black; */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 10rem;
+  background-color: var(--black);
+  color: var(--white);
+  text-align: center;
+  border-radius: 1rem;
+  padding: 1rem;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  top: -0.1rem;
+  right: 105%;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
