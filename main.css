@@ -107,7 +107,7 @@ article {
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
-  width: 80%;
+  width: 70%;
 }
 
 .searchBar {
@@ -127,14 +127,14 @@ article {
   width: auto;
   height: auto;
   border-radius: 2rem;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   font-family: "Raleway", sans-serif;
   box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.5);
   border: 0.05rem var(--black) solid;
   background-color: var(--dark);
   color: var(--black);
 
-  padding: 0.5rem 1rem;
+  padding: 0.2rem 1rem;
   margin-right: 2rem;
 }
 
@@ -149,14 +149,16 @@ article {
   flex-flow: column wrap;
   align-items: center;
 
-  width: 25rem;
+  width: 29rem;
   height: auto;
   margin-bottom: 2rem;
-  margin-left: 5rem;
+  margin-left: 1rem;
   padding: 1rem;
 }
 
 #textBarContainer {
+  width: 99%;
+  height: 90%;
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -209,11 +211,12 @@ a {
   float: left;
   height: 1.4rem;
   width: auto;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   margin-top: 0.4rem;
 
   border-radius: 2rem;
-  padding: 0.2rem;
+  border: 0.05rem var(--dark) solid;
+  padding: 0.2rem 0.5rem;
   font-family: "Raleway", sans-serif;
   background-color: var(--light);
   color: var(--blackish);
@@ -221,10 +224,13 @@ a {
 
 .buttonContainer {
   float: left;
+  margin-left: 3rem;
 }
 
 .iconButton {
-  height: 0.8rem;
+  height: 0.7rem;
+  margin: 0px;
+  padding: 0px;
 }
 
 #deleteResults {
