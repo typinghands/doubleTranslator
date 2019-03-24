@@ -141,6 +141,13 @@ function fnDoublecheckResults() {
   const storedClip = document.getElementById("bookContainer").innerHTML;
   const noSpaceString = storedClip.replace(/\s\s+/g, " ");
   const googleCheck = noSpaceString.replace(/\s/g, "%20");
+
+  if (targetLanguage === "zh") {
+    targetLanguage = "zh-CN";
+  } else if (firstLanguage === "zh") {
+    firstLanguage = "zh-CN";
+  }
+
   window.open(
     `https://translate.google.com/#view=home&op=translate&sl=${targetLanguage}&tl=${firstLanguage}&text=${googleCheck}`,
     "_blank"
